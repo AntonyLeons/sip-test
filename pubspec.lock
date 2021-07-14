@@ -43,20 +43,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.15.0"
-  convert:
-    dependency: transitive
-    description:
-      name: convert
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.1.1"
   crypto:
     dependency: transitive
     description:
       name: crypto
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.5"
+    version: "3.0.1"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -106,7 +99,7 @@ packages:
       name: flutter_webrtc
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.8"
+    version: "0.6.5"
   intl:
     dependency: transitive
     description:
@@ -127,14 +120,14 @@ packages:
       name: lists
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.6"
+    version: "1.0.1"
   logger:
     dependency: transitive
     description:
       name: logger
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.9.4"
+    version: "1.0.0"
   matcher:
     dependency: transitive
     description:
@@ -155,7 +148,7 @@ packages:
       name: parser_error
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.1"
+    version: "0.2.0"
   path:
     dependency: transitive
     description:
@@ -163,10 +156,24 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
+  path_provider:
+    dependency: transitive
+    description:
+      name: path_provider
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.2"
   path_provider_linux:
     dependency: transitive
     description:
       name: path_provider_linux
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
+  path_provider_macos:
+    dependency: transitive
+    description:
+      name: path_provider_macos
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.0"
@@ -232,14 +239,14 @@ packages:
       name: recase
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.0.1"
+    version: "4.0.0"
   sdp_transform:
     dependency: transitive
     description:
       name: sdp_transform
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.0"
+    version: "0.3.0"
   shared_preferences:
     dependency: "direct main"
     description:
@@ -285,9 +292,11 @@ packages:
   sip_ua:
     dependency: "direct main"
     description:
-      name: sip_ua
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "."
+      ref: HEAD
+      resolved-ref: a09053f7a6526a0308be3495672b0130c1d3ab7b
+      url: "https://github.com/flutter-webrtc/dart-sip-ua"
+    source: git
     version: "0.3.5"
   sky_engine:
     dependency: transitive
@@ -342,7 +351,7 @@ packages:
       name: text
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.1"
+    version: "0.2.0"
   typed_data:
     dependency: transitive
     description:
@@ -356,7 +365,7 @@ packages:
       name: uuid
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.2.2"
+    version: "3.0.4"
   vector_math:
     dependency: transitive
     description:

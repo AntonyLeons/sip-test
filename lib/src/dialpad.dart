@@ -185,6 +185,15 @@ class _MyDialPadWidget extends State<DialPadWidget>
 
   @override
   Widget build(BuildContext context) {
+    UaSettings uaSettings = UaSettings();
+    // uaSettings.authorizationUser='1000';
+    uaSettings.webSocketUrl = 'wss://fone.ledunia.com:7443';
+    // uaSettings.displayName = 'Flutter SIP';
+    // uaSettings.password ='tempoWild';
+    uaSettings.uri ='sip:1000@139.59.162.221';
+
+
+
     return Scaffold(
         appBar: AppBar(
           title: Text("Dart SIP UA Demo"),
@@ -194,9 +203,6 @@ class _MyDialPadWidget extends State<DialPadWidget>
                   switch (value) {
                     case 'account':
                       Navigator.pushNamed(context, '/register');
-                      break;
-                    case 'about':
-                      Navigator.pushNamed(context, '/about');
                       break;
                     default:
                       break;
@@ -223,22 +229,6 @@ class _MyDialPadWidget extends State<DialPadWidget>
                         ),
                         value: 'account',
                       ),
-                      PopupMenuItem(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: <Widget>[
-                            Icon(
-                              Icons.info,
-                              color: Colors.black38,
-                            ),
-                            SizedBox(
-                              child: Text('About'),
-                              width: 64,
-                            )
-                          ],
-                        ),
-                        value: 'about',
-                      )
                     ]),
           ],
         ),
@@ -268,7 +258,11 @@ class _MyDialPadWidget extends State<DialPadWidget>
                       child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: _buildDialPad(),
+                    children: <Widget>[TextButton(onPressed: ()=>{
+                      helper.start(uaSettings)
+                    }, child: Text('Start')),TextButton(onPressed: ()=>{
+                      helper.call('9196',true)
+                    }, child: Text('Call'))],
                   )),
                 ])));
   }

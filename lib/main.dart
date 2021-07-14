@@ -8,7 +8,6 @@ import 'package:flutter_webrtc/flutter_webrtc.dart';
 import 'src/register.dart';
 import 'src/dialpad.dart';
 import 'src/callscreen.dart';
-import 'src/about.dart';
 
 void main() {
   if (WebRTC.platformIsDesktop) {
@@ -29,7 +28,6 @@ class MyApp extends StatelessWidget {
         RegisterWidget(helper),
     '/callscreen': ([SIPUAHelper helper, Object arguments]) =>
         CallScreenWidget(helper, arguments as Call),
-    '/about': ([SIPUAHelper helper, Object arguments]) => AboutWidget(),
   };
 
   Route<dynamic> _onGenerateRoute(RouteSettings settings) {
