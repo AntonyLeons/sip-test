@@ -188,6 +188,7 @@ class _MyDialPadWidget extends State<DialPadWidget>
     UaSettings uaSettings = UaSettings();
     // uaSettings.authorizationUser='1000';
     uaSettings.webSocketUrl = 'wss://fone.ledunia.com:7443';
+    uaSettings.register =false;
     // uaSettings.displayName = 'Flutter SIP';
     // uaSettings.password ='tempoWild';
     uaSettings.uri ='sip:1000@139.59.162.221';
