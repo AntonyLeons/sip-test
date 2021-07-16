@@ -1,11 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sip">
+    package="com.ledunia.phone">
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="android.permission.BIND_TELECOM_CONNECTION_SERVICE"/>
    <application
         android:label="sip"
         android:icon="@mipmap/ic_launcher">
@@ -43,5 +44,12 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+                    <service android:name="io.wazo.callkeep.VoiceConnectionService"
+          android:label="Wazo"
+          android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE">
+          <intent-filter>
+              <action android:name="android.telecom.ConnectionService" />
+          </intent-filter>
+        </service>
     </application>
 </manifest>

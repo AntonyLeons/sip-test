@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "837412066754",
+    "firebase_url": "https://ledunia-5a31c.firebaseio.com",
+    "project_id": "ledunia-5a31c",
+    "storage_bucket": "ledunia-5a31c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837412066754:android:373b647828c63ca591325b",
+        "android_client_info": {
+          "package_name": "com.ledunia.phone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837412066754-ehvcm26l8ehlnlrvcqst6b1dhfh4f6lo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZYsZK2x_yl9cl4QylzZqxo5uMHVuybtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837412066754-ehvcm26l8ehlnlrvcqst6b1dhfh4f6lo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
